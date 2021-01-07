@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_2">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_50mdp"
+        android:layout_marginTop="@dimen/_80mdp"
+        android:text="KATALOG KODU GİRİNİZ"
+        tools:ignore="MissingConstraints"
+        android:textSize="@dimen/_20mdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextt"
+
+        android:layout_width="@dimen/_160mdp"
+        android:layout_height="@dimen/_42mdp"
+        android:layout_marginTop="@dimen/_16mdp"
+         android:hint="Katalog kodu"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="@dimen/_160mdp"
+        android:layout_height="@dimen/_42mdp"
+        android:layout_marginTop="@dimen/_16mdp"
+        android:text="Giriş"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="355dp"
+        android:background="@drawable/radius"
+        app:layout_constraintStart_toStartOf="@+id/editTextt"
+        app:layout_constraintTop_toBottomOf="@+id/editTextt"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch1"
+        android:layout_width="@dimen/_180mdp"
+        android:layout_height="66dp"
+        android:text="QR Code Kulllanmak İstiyorum"
+        android:layout_marginTop="@dimen/_16mdp"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button5">
+
+
+    </androidx.appcompat.widget.SwitchCompat>
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250mdp"
+        android:layout_marginTop="@dimen/_10mdp"
+        android:visibility="invisible"
+        app:autoFocusButtonColor="@android:color/white"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@android:color/white"
+        app:flashButtonVisible="true"
+        app:frameAspectRatioHeight="1"
+        app:frameAspectRatioWidth="1"
+        app:frameColor="@android:color/white"
+        app:frameCornersRadius="0dp"
+        app:frameCornersSize="50dp"
+        app:frameSize="0.75"
+        app:frameThickness="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        app:maskColor="#77000000"
+        tools:layout_editor_absoluteX="0dp"
+        >
+
+    </com.budiyev.android.codescanner.CodeScannerView>
+
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:text="Galery aç"
+        android:background="@drawable/radius"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

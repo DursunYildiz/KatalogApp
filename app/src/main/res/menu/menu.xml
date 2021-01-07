@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/arama_butonu"
+        android:title="Ara"
+        android:icon="@drawable/ic_action_search"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView">
+    </item>
+    <item android:id="@+id/sıralama"
+        android:title="sıralama"
+        android:icon="@drawable/ic_action_sort"
+        app:showAsAction="always"
+        >
+    </item>
+    <item android:id="@+id/ekleme"
+        android:title="ekleme"
+        android:icon="@drawable/ekleme"
+        app:showAsAction="always"
+        android:visible="false"
+        >
+
+    </item>
+    <item android:id="@+id/qr_image"
+        android:title="ekleme"
+        android:icon="@drawable/ic_baseline_qr_code_24"
+        app:showAsAction="always"
+        android:visible="false"
+        >
+
+    </item>
+    <item android:id="@+id/info"
+        android:title="ekleme"
+        android:icon="@drawable/ic_baseline_info_24"
+        app:showAsAction="always"
+        >
+
+    </item>
+
+
+
+
+</menu>

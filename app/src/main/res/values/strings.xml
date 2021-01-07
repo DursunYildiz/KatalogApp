@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DRS_Project</string>
+    <string name="open">Open</string>
+
+    <string name="close">Close</string>
+
+    <string name="value_required">Value Required</string>
+    <string name="qr_code_olustur">QR Code Oluştur</string>
+    <string name="kategory">Kategory</string>
+    <string name="yukle">Yükle</string>
+    <string name="acıklama">Açıklama</string>
+    <string name="isim">İsim</string>
+
+
+</resources>

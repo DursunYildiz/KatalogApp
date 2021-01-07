@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:background="@color/beyaz"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <vn.tiki.widgets.AutoCompleteEmailEditText
+        android:id="@+id/etEmail"
+        android:layout_width="@dimen/_160mdp"
+        android:layout_height="@dimen/_42mdp"
+        android:layout_marginStart="@dimen/_70mdp"
+        android:layout_marginTop="@dimen/_100mdp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/cardview_dark_background"
+        android:textColorHint="@color/siyah"
+        android:textSize="20dp"
+        app:domains="@array/domains"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.subhrajyoti.passwordview.PasswordView
+        android:id="@+id/passwordView"
+        android:layout_width="@dimen/_160mdp"
+        android:layout_height="@dimen/_42mdp"
+        android:layout_marginTop="@dimen/_16mdp"
+        android:textColorHint="@color/siyah"
+        android:hint="Şifre"
+        app:eyeTint="@color/siyah"
+        android:textColor="@color/siyah"
+        app:layout_constraintStart_toStartOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+    <com.subhrajyoti.passwordview.PasswordView
+        android:id="@+id/passwordView2"
+        android:layout_width="@dimen/_160mdp"
+        android:layout_height="@dimen/_42mdp"
+        android:layout_marginTop="@dimen/_16mdp"
+        android:textColorHint="@color/siyah"
+        android:hint="Şifre"
+        app:eyeTint="@color/siyah"
+        android:textColor="@color/siyah"
+        app:layout_constraintStart_toStartOf="@+id/passwordView"
+        app:layout_constraintTop_toBottomOf="@+id/passwordView" />
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="@dimen/_160mdp"
+        android:layout_height="@dimen/_42mdp"
+        android:layout_marginTop="@dimen/_16mdp"
+        android:text="Kayıt Ol"
+        android:background="@drawable/radius"
+        app:layout_constraintStart_toStartOf="@+id/passwordView2"
+        app:layout_constraintTop_toBottomOf="@+id/passwordView2"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
