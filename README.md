@@ -1,10 +1,9 @@
 **Views**
 
-The home screen of choose notarial city, clik find button goto notarials list screen. When you click on the desired notary, it goes to the maps page. Maps page show selected notraial in map.
 
-| HOME                                                                                                                                                                               |                                                          NOTARİALS                                                          |
+| Login                                                                                                                                                                          |                                                          Register                                                   |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------: |
-| ![Output sample](https://github.com/OSI-Yazilim/nobetcinoter-mobile/blob/main/assets/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20Max%20-%202021-07-02%20at%2017.51.48.png) | ![Output sample](https://github.com/OSI-Yazilim/nobetciNoter/blob/main/assets/Screenshot_20210517-150707_Nöbetçi_Noter.png) |
+| ![Output sample]https://github.com/DursunYildiz/KatalogApp/blob/master/photos/photo_2021-08-01_14-24-18.jpg) | ![Output sample](https://github.com/DursunYildiz/KatalogApp/blob/master/photos/photo_2021-08-01_14-24-16.jpg) |
 
 | SHOW NOTARİAL in MAP  
 | -------------------------:|
